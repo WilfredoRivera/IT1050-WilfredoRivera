@@ -4,64 +4,34 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab005
+namespace Test1
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int i = 0;
-            while (++i <= 100)
-                Console.WriteLine("number is {0}", +i);
-            if ((i % 2) == 0) 
-            Console.Write("it is even");
-            else
-                Console.WriteLine("it is odd");
-            int n = 0;
-            while(++n<100)
-            if (n < 10)
-                Console.WriteLine("Polar Bear");
-            else
-            if (n < 20)
-                Console.WriteLine("Penguin");
-            else
-            if (n < 40)
-                Console.WriteLine("Moose");
-            else
-                if (n < 50)
-                Console.WriteLine("Reindeer");
-            else
-                if (n < 60)
-                Console.WriteLine("Deer");
-            if (n < 70)
-                Console.WriteLine("Turtle");
-            else
-            if (n < 80)
-                Console.WriteLine("Lion");
-            else
-                if (n < 90)
-                Console.WriteLine("Fish");
-           
-
-
-
+            int t = 0;
+            while (t++ < 128)
+          Console.WriteLine("Value of t is {{{0}}}", ++t);
+            for (int i = 49; i >= 1;)
+            Console.Write(" {0},", i--);
+            int v = 1;
+            while (v <= 21)
+            Console.Write("{0}   ", v++);
+            int n = 8;
+            int w = 10;
+            while (w < n) ;
+            Console.WriteLine("{0}",w++);
+            // a do while loop executes the code without checking if the code is can be executed or not while a while loop checks the condition before running it.
+            bool icyrain = true;
+            bool tornadoWarning = true;
+            if (icyrain = false && tornadoWarning == false) ;
+            Console.WriteLine("\"lets go outside!\"");
+            bool keeplooping;
+            while (keeplooping = true) ;
             
             
-             
             
-
-            
-
-            
-
-
-        
-           
-            
-
-
-
         }
-
     }
 }
