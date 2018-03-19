@@ -4,34 +4,57 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Test1
+namespace Lab07
 {
-    class Program
+    class MyMath
     {
         static void Main(string[] args)
+
         {
-            int t = 0;
-            while (t++ < 128)
-          Console.WriteLine("Value of t is {{{0}}}", ++t);
-            for (int i = 49; i >= 1;)
-            Console.Write(" {0},", i--);
-            int v = 1;
-            while (v <= 21)
-            Console.Write("{0}   ", v++);
-            int n = 8;
-            int w = 10;
-            while (w < n) ;
-            Console.WriteLine("{0}",w++);
-            // a do while loop executes the code without checking if the code is can be executed or not while a while loop checks the condition before running it.
-            bool icyrain = true;
-            bool tornadoWarning = true;
-            if (icyrain = false && tornadoWarning == false) ;
-            Console.WriteLine("\"lets go outside!\"");
-            bool keeplooping;
-            while (keeplooping = true) ;
-            
-            
-            
+            Console.Write("enter first number");
+            double operand1 = double.Parse(Console.ReadLine());
+            Console.Write("Enter second number ");
+            double operand2 = double.Parse(Console.ReadLine());
+            double result = operand1 * operand2;
+            Console.WriteLine("product is" + result);
         }
+        public void divide()
+        {
+            Console.Write("enter first number");
+            double operand1 = double.Parse(Console.ReadLine());
+            Console.Write("enter second number");
+            double operand2 = double.Parse(Console.ReadLine());
+            double result = operand1 / operand2;
+            Console.WriteLine("result is " + result);
+        }
+        public void addition()
+        {
+            Console.Write("enter first number");
+            double operand1 = double.Parse(Console.ReadLine());
+            Console.Write("enter second number");
+            double operand2 = double.Parse(Console.ReadLine());
+            double result = operand1 + operand2;
+            Console.WriteLine("result is " + result);
+        }
+        public void subtract()
+        {
+            Console.Write("enter first number");
+            double operand1 = double.Parse(Console.ReadLine());
+            Console.Write("enter second number");
+            double operand2 = double.Parse(Console.ReadLine());
+            double result = operand1 - operand2;
+            Console.WriteLine("result is " + result);
+
+
+
+
+        }
+        public void calling()
+        {
+
+        }
+
     }
 }
+
+
